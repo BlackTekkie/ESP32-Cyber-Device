@@ -1,0 +1,31 @@
+#pragma once
+
+enum UiState {
+  UI_LOCK,
+  UI_MENU,
+  // Scanners
+  UI_WIFI,
+  UI_BLUETOOTH,
+  UI_NETWORK,
+  // Tools
+  UI_AP_MANAGER,
+  UI_PORT_SCAN,
+  UI_CHANNEL,
+  UI_PROBE_SNIFF,
+  UI_ARP_WATCH,
+  UI_RSSI_TRACK,
+  UI_BW_MONITOR,
+  UI_DNS_MONITOR,
+  UI_HTTP_INSPECT,
+  // Attacks
+  UI_BEACON_SPAM,
+  UI_CAPTIVE,
+  // Misc
+  UI_SETTINGS,
+  UI_REBOOT,
+  UI_WIFI_ATTACKS,
+  UI_BLE_ATTACKS,
+  UI_TOOLS
+};
+
+extern UiState currentState;
